@@ -1,11 +1,30 @@
-<ion-content>
+<ion-header class="task">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+    <ion-title>Inspect</ion-title>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true">
   <div class="spacer"></div>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <div *ngIf="itWorked">It worked!</div>
-        <button (click)="clickButton($event)">Click Me</button>
-      </ion-col>
+      <ion-label>Section</ion-label>
+      
+      <button (click)="clickButton($event)">Click Me</button>
+    </ion-row>
+    <ion-row>
+      <div *ngIf="itWorked">It worked!</div>
     </ion-row>
   </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
