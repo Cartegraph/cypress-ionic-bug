@@ -1,27 +1,5 @@
-# Min
+# Cypress/Ionic Bug Reproduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
+This reproduces buggy behavior with Cypress and Ionic's `<ion-content>` element. A number of Cypress tests are included, running against multiple setups, demonstrating an issue scrolling to and clicking on an offscreen button.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+First start `npx ng serve`, then run `npx cypress open`.

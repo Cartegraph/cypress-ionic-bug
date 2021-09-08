@@ -1,4 +1,4 @@
-context("ion-content, spacer, scroll events", () => {
+context("ion-content, offscreen button, scroll events", () => {
   beforeEach(() => {
     cy.visit("/");
   });
@@ -6,7 +6,7 @@ context("ion-content, spacer, scroll events", () => {
   addTests();
 });
 
-context("no ion-content, spacer", () => {
+context("no ion-content, offscreen button", () => {
   beforeEach(() => {
     cy.visit("/no-content");
   });
@@ -14,7 +14,7 @@ context("no ion-content, spacer", () => {
   addTests();
 });
 
-context("ion-content, no spacer, scroll events", () => {
+context("ion-content, onscreen button, scroll events", () => {
   beforeEach(() => {
     cy.visit("/content");
   });
@@ -22,7 +22,7 @@ context("ion-content, no spacer, scroll events", () => {
   addTests();
 });
 
-context("ion-content, spacer, no scroll events", () => {
+context("ion-content, offscreen button, no scroll events", () => {
   beforeEach(() => {
     cy.visit("/no-event");
   });
