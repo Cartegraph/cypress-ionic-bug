@@ -6,6 +6,14 @@ context("ion-content, spacer, scroll events", () => {
   addTests();
 });
 
+context("no ion-content, spacer", () => {
+  beforeEach(() => {
+    cy.visit("/no-content");
+  });
+
+  addTests();
+});
+
 context("ion-content, no spacer, scroll events", () => {
   beforeEach(() => {
     cy.visit("/content");
@@ -24,10 +32,6 @@ context("ion-content, spacer, no scroll events", () => {
 
 
 function addTests() {
-  
-
-  
-
   it("Clicks on a button", () => {
     cy.get("button").click();
     cy.contains("It worked!").should("be.visible");

@@ -14,6 +14,10 @@ const routes: Routes = [
     path: "no-event",
     loadChildren: () => import("./pages/no-event/no-event.module").then((m) => m.NoEventPageModule),
   },
+  {
+    path: "no-content",
+    loadChildren: () => import("./pages/no-content/no-content.module").then((m) => m.NoContentPageModule),
+  },
 ];
 
 @NgModule({
