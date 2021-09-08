@@ -1,0 +1,11 @@
+<ion-content>
+  <div class="spacer"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="itWorked">It worked!</div>
+        <button (click)="clickButton($event)">Click Me</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
