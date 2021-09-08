@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 // eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-spacer',
+  templateUrl: './spacer.page.html',
+  styleUrls: ['./spacer.page.scss'],
 })
-export class HomePage {
+export class SpacerPage {
   itWorked = "It's not working...";
 
   clickButton($event: any) {
